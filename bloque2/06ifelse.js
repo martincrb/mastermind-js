@@ -1,11 +1,16 @@
+// control de flujo
+
 // condicionales
-if (condicion) {
+var condicion = false;
+var condicion2 = true;
+if (condicion && condicion2) {
     // hago esto si se cumple condicion
+    console.log('Estoy en el if');
 } else {
     // hago esto otro si no se cumple condicion
+    console.log('Estoy en el else');
 }
 // continuo ejecutando
-
 
 
 
@@ -21,6 +26,7 @@ if (condicion1) {
 } else {
     // Entro aqui si no cumplo ninguna
 }
+
 
 
 

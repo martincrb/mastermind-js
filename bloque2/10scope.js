@@ -6,6 +6,7 @@ var variableGlobal = 1;
 function global() {
  console.log(variableGlobal);
 }
+
 global();
 console.log(variableGlobal);
 
@@ -13,23 +14,21 @@ console.log(variableGlobal);
 
 
 
-
-
-
-
-
-/*
 // Scope local: solo visible dentro de una funcion
 function local() {
     var variableLocal = 2;
     console.log(variableLocal);
 }
 local();
-console.log(variableLocal); // No funciona
-*/
+//console.log(variableLocal); // No funciona
 
 
 
+if (true) {
+    // scope de bloque 1
+} else {
+    // scope de bloque 2
+}
 
 
 
@@ -38,8 +37,9 @@ console.log(variableLocal); // No funciona
 // let define scope de bloque
 // un bloque es todo lo que se encuentra entre { y }
 
-if (condicion) {
+if (true) {
     // Esto es un bloque
+    let variable = 0;
 }
 
 while (condicion) {
@@ -49,6 +49,7 @@ while (condicion) {
 for (let i = 0; i < 10; ++i) {
     // Esto es otro bloque
 }
+
 
 var condicion1 = true;
 if (condicion1) {
@@ -65,6 +66,7 @@ if (condicion2) {
     console.log(b);
 }
 console.log(b); // Como b esta creado con var, se ha creado en el contexto global
-*/
+
 
 // Se recomienda siempre usar let en vez de var para evitar problemas de scope
+*/

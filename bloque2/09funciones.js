@@ -3,7 +3,6 @@ function proceso1() {
     console.log('Hago una cosa');
     console.log('Luego hago otra');
 }
-
 // Las podemos llamar
 proceso1();
 // Repetidamente
@@ -12,7 +11,6 @@ proceso1();
 
 
 
-/*
 // Les podemos enviar datos
 
 function generateFullName(nombre, apellido) {
@@ -20,31 +18,32 @@ function generateFullName(nombre, apellido) {
 }
 
 generateFullName('Martin', 'Cristobal');
-*/
+generateFullName('Martin', 'Hernandez');
 
 
 
 
-/*
+
 // Podemos hacer que nos devuelvan datos
 function calculateMidpoint(num1, num2) {
     return (num1 + num2)/2;
 }
 
-var firstNumber = 2;
+var firstNumber = 0;
 var secondNumber = 4;
 var midPoint = calculateMidpoint(firstNumber, secondNumber);
 console.log('La media de ' + firstNumber +' y ' + secondNumber +' es ' + midPoint);
-*/
 
 
 
 
 
-/*
+
+
 // Las funciones son un tipo de dato, por lo que podemos utilizarlo como variable
 
 var logicaSaludar = function(nombre) {console.log('Hola, mi nombre es ' + nombre)};
+var logicaSaludarMaleducado = function(nombre) {console.log('Hola, no me gustas pero mi nombre es ' + nombre)};
 
 // En logicaSaludar tenemos la referencia a la funcion
 // Podemos hacer algo tan loco como pasar una funciona a otra:
@@ -56,8 +55,7 @@ function saludarSuperEducadamente(funcionPasadaPorParametro, nombre) {
 }
 
 // Si lo ejecutamos todo:
-saludarSuperEducadamente(logicaSaludar, 'Martin');
-*/
+saludarSuperEducadamente(logicaSaludarMaleducado, 'Martin');
 
 
 
@@ -78,4 +76,4 @@ var itemEnPantalla; // Algun item de la pantalla
 // La libreria de frontend me proporciona una forma de ejecutar
 // mi funcion cuando se haga click
 // Lo que estoy haciendo es pasarle la funcion a ejecutar como parametro
-itemEnPantalla.onClick(processClickEvent)
+//itemEnPantalla.onClick(processClickEvent)
