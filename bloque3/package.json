@@ -1,0 +1,14 @@
+{
+  "name": "bloque3",
+  "version": "1.0.0",
+  "description": "Bloque 3 del curso de JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.27.0"
+  }
+}
